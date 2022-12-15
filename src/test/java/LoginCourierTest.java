@@ -41,8 +41,6 @@ public class LoginCourierTest {
                 .assertThat()
                 .statusCode(200)
                 .body("id",notNullValue());
-
-
     }
 
     @Test

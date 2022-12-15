@@ -20,17 +20,14 @@ public class CreateOrderTest {
         RestAssured.baseURI = "http://qa-scooter.praktikum-services.ru/";
     }
 
-    @Parameterized.Parameters
+    @Parameterized.Parameters(name = "Тестовые данные: {0}, {1}, {2}, {3}")
     public static Object[][] getQuest() {
-
-
         return new Object[][]{
                 {new String[]{"GREY"}},
                 {new String[]{"BLACK"}},
                 {new String[]{"GREY", "BLACK"}},
                 {new String[]{""}},
         };
-
     }
 
     @Test

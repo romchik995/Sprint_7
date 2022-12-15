@@ -24,6 +24,5 @@ public class ShowOrderListTest {
                 .assertThat()
                 .statusCode(200)
                 .body("orders", notNullValue());
-
     }
 }

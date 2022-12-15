@@ -31,8 +31,6 @@ public class CreateCourierTest {
                 .then().assertThat()
                 .statusCode(201)
                 .body("ok", is(true));
-
-
     }
 
     @Test
